@@ -1,0 +1,12 @@
+1. load both datasets (main_data.xlsx and supplementary_data.xlsx)
+2. merge the two datasets using "id" as key
+3. rename the column "F_5" to "feature_5" in the new dataset
+4. sort the new dataset by "id" and "date" both ascending
+5. drop those observations with "feature_5" is "F"
+6. report distribution of "feature_5" (uniques values and number of observations for each category)
+7. report average value of "feature_1" for each "feature_5" category
+8. fill missing values of  "feature_2" using its own median value
+9. Winsorize "feature_3" by limiting the extreme values to 1 percentile (left tail) and 99 percentile (right tail). Name it "feature_3_winsor". 
+10. split the dataset into training and testing datasets using 70:30 split ratio
+11. Build a logistic regression on the training set to predict 'y' being (90+DPD) using "feature_1", "feature_2", "feature_3_winsor". "feature_4" as independent variables.
+12. report AUC of the training set and testing set.
