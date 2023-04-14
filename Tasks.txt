@@ -7,6 +7,7 @@
 7. report average value of "feature_1" for each "feature_5" category
 8. fill missing values of  "feature_2" using its own median value
 9. Winsorize "feature_3" by limiting the extreme values to 1 percentile (left tail) and 99 percentile (right tail). Name it "feature_3_winsor". 
-10. split the dataset into training and testing datasets using 70:30 split ratio
-11. Build a logistic regression on the training set to predict 'y' being (90+DPD) using "feature_1", "feature_2", "feature_3_winsor". "feature_4" as independent variables.
-12. report AUC of the training set and testing set.
+10. Create 8 indicators for cases where “feature 1”  is greater than the following : 1)  100 2)  200 3)  250 4) 320 and 5) 400  6) 440 7) 500 8) 520  and test all in the model. 
+11. split the dataset into training and testing datasets using 70:30 split ratio
+12. Build a logistic regression on the training set to predict 'y' being (90+DPD) using "feature_1", "feature_2", "feature_3_winsor". "feature_4" as independent variables.
+13. report AUC and RMSE of the training set and testing set.
